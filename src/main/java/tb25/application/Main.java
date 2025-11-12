@@ -1,4 +1,4 @@
-package com.github.tb25;
+package tb25.application;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
 public void start (Stage primaryStage) throws Exception {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/resources/home.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/fxml/home.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 500, 600);
             primaryStage.setTitle("Novel Collection Home Page");
             primaryStage.setScene(scene);

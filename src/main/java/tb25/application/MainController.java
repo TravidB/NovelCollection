@@ -1,4 +1,4 @@
-package com.github.tb25;
+package tb25.application;
 
 public class MainController {
 }
