@@ -5,6 +5,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.Button?>
 <VBox xmlns="http://javafx.com/javafx/21"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="tb25.application.MainController"
@@ -31,5 +32,20 @@
             <Font name="Merriweather" size="20.0"/>
         </font>
     </Label>
+
+    <VBox alignment="CENTER" spacing="20.0">
+        <Button fx:id="browseButton" text="Browse Novel"
+            prefHeight="30.0" prefWidth="200.0"
+            onAction="#onBrowseNovelClick"/>
+
+        <Button fx:id="addButton" text="Add Novel"
+                prefHeight="30.0" prefWidth="200.0"
+                onAction="#onAddNovelClick"/>
+
+        <Button fx:id="removeButton" text="Remove Novel"
+                prefHeight="30.0" prefWidth="200.0"
+                onAction="#onRemoveNovelClick"/>
+
+    </VBox>
 
 </VBox>
