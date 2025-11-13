@@ -16,6 +16,9 @@ public class MainController {
     private Button browseNovelBtn;
 
     @FXML
+    private Button saveNovelBtn;
+
+    @FXML
     protected void onBrowseNovelClick(){
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/fxml/addNovel.fxml"));
