@@ -16,7 +16,7 @@
     </padding>
 
     <!-- Home Title -->
-    <Label fx:id="title" text="Novel Collection!"
+    <Label fx:id="title" text="Welcome to"
         textAlignment="CENTER" wrapText="true">
 
         <font>
@@ -45,6 +45,11 @@
         <Button fx:id="removeButton" text="Remove Novel"
                 prefHeight="30.0" prefWidth="200.0"
                 onAction="#onRemoveNovelClick"/>
+
+        <Button fx:id="exitButton" text="Exit Home"
+                prefHeight="30.0" prefWidth="200.0"
+                onAction="#onExitNovelClick"/>
+
 
     </VBox>
 

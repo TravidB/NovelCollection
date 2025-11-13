@@ -18,4 +18,10 @@ public class MainController {
     protected void onRemoveNovelClick(){
 
     }
+
+    @FXML
+    protected void onExitNovelClick(){
+
+    }
+
 }
