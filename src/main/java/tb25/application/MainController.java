@@ -1,12 +1,34 @@
 package tb25.application;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import java.awt.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 public class MainController {
 
     @FXML
-    protected void onBrowseNovelClick(){
+    private Button browseNovelBtn;
 
+    @FXML
+    protected void onBrowseNovelClick(){
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/fxml/addNovel.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 500, 600);
+
+            Stage stage = (Stage) browseNovelBtn.getScene().getWindow();
+
+            stage.setScene(scene);
+            stage.setTitle("Esy Novel Collection - Add Novel");
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @FXML

@@ -15,7 +15,7 @@
         <Insets bottom = "40.0" left = "30.0" right = "30.0" top = "40.0"/>
     </padding>
 
-    <!-- Browse Title -->
+    <!-- Add Title -->
     <Label fx:id="title" text="Esy Novel Collection"
            textAlignment="CENTER" wrapText="true">
 
@@ -25,12 +25,12 @@
 
     </Label>
 
-    <!-- Browse Subtitle -->
-    <Label fx:id="subtitle" text="View!"
+    <!-- Add Subtitle -->
+    <Label fx:id="subtitle" text="Add Novel!"
            textAlignment="CENTER" wrapText="true">
 
         <font>
-            <Font name="Merriweather" size="20.0"/>
+            <Font name="Merriweather" size="30.0"/>
         </font>
     </Label>
 
