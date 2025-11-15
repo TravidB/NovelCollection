@@ -37,7 +37,7 @@
     </Label>
 
     <!-- Add Novel Name -->
-    <VBox alignment="CENTER_LEFT" spacing="10.0" padding="20.0">
+    <VBox alignment="CENTER_LEFT" spacing="10.0">
         <Label fx:id="novelName" text="Novel Name"
                textAlignment="CENTER" wrapText="true">
             <font>

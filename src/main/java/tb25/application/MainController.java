@@ -20,6 +20,11 @@ public class MainController {
 
     @FXML
     protected void onBrowseNovelClick(){
+
+    }
+
+    @FXML
+    protected void onAddNovelClick(){
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/fxml/addNovel.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 500, 600);
@@ -32,11 +37,6 @@ public class MainController {
         } catch (Exception e){
             e.printStackTrace();
         }
-    }
-
-    @FXML
-    protected void onAddNovelClick(){
-
     }
 
     @FXML
