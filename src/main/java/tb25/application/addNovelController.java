@@ -21,7 +21,7 @@ public class addNovelController {
     private TextField novel_page;
 
     @FXML
-    private ToggleGroup progress_tracker;
+    private ToggleGroup progress_group;
 
     @FXML
     private Button add_button;

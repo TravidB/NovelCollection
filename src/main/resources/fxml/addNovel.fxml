@@ -39,18 +39,24 @@
 
     <!-- Add Novel Name -->
     <VBox alignment="CENTER_LEFT" spacing="10.0">
-        <Label fx:id="novelName" text="Novel Name"
+        <Label text="Novel Name"
                textAlignment="CENTER" wrapText="true">
             <font>
-                <Font name = "Merriweather" size="20.0"/>
+                <Font name = "Merriweather" size="15.0"/>
             </font>
         </Label>
 
-        <TextField fx:id="nameField"
+        <TextField fx:id="novel_name"
                    promptText="eg... Great Gabsy"
-                   prefWidth="200.0" prefHeight="30.0"/>
+                   prefWidth="100.0" prefHeight="30.0"/>
 
-        <Label text="Progress Tracker"/>
+        <Label text="Author Name" textAlignment="LEFT" wrapText="true"/>
+        <TextField fx:id="novel_author" promptText="eg... F. Scott Fitzgerald
+"                   prefWidth="100.0" prefHeight="30.0"/>
+
+        <Label text="Progress Tracker"
+        textAlignment="LEFT" wrapText="true"/>
+
         <HBox spacing="30.0" >
             <RadioButton fx:id="chapterRadio" text="chapter" toggleGroup="$progressTrackGroup"/>
             <RadioButton fx:id="pageRadio" text="page" toggleGroup="$progressTrackGroup"/>
