@@ -58,15 +58,14 @@
         textAlignment="LEFT" wrapText="true"/>
 
         <HBox spacing="30.0" >
-            <RadioButton fx:id="chapterRadio" text="chapter" toggleGroup="$progressTrackGroup"/>
-            <RadioButton fx:id="pageRadio" text="page" toggleGroup="$progressTrackGroup"/>
+            <RadioButton fx:id="chapterRadio" text="chapter" toggleGroup= "$chapterProgressGroup" selected="true"/>
+            <RadioButton fx:id="pageRadio" text="page" toggleGroup="$pageProgressGroup" selected="true"/>
         </HBox>
 
         <HBox alignment="CENTER_LEFT" spacing="20.0">
             <Button fx:id="saveNovelBtn" text="Save"
                     prefHeight="20.0" prefWidth="100.0"
-                    onAction="#onSaveNovelClick"
-            />
+                    onAction="#onSaveNovelClick"/>
         </HBox>
 
     </VBox>
