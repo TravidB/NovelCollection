@@ -58,9 +58,14 @@
         textAlignment="LEFT" wrapText="true"/>
 
         <HBox spacing="30.0" >
-            <RadioButton fx:id="chapterRadio" text="chapter" toggleGroup= "$chapterProgressGroup" selected="true"/>
-            <RadioButton fx:id="pageRadio" text="page" toggleGroup="$pageProgressGroup" selected="true"/>
+            <RadioButton fx:id="chapterRadio" text="chapter" toggleGroup= "$chapterProgressGroup" selected="false"/>
+            <RadioButton fx:id="pageRadio" text="page" toggleGroup="$pageProgressGroup" selected="false"/>
         </HBox>
+
+        <!-- Progress Details -->
+        <Label text="Progress Details:"/>
+        <TextField fx:id="novel_chapter" prefWidth="4.0" disable="false"/>
+        <TextField fx:id="novel_page" prefWidth="4.0" disable="false"/>
 
         <HBox alignment="CENTER_LEFT" spacing="20.0">
             <Button fx:id="saveNovelBtn" text="Save"
