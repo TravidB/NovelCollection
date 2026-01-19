@@ -21,22 +21,16 @@ public class addNovelController {
     private TextField novel_page;
 
     @FXML
-    private ToggleGroup chapterProgressGroup;
+    private TextField progressField;
 
     @FXML
-    private ToggleGroup pageProgressGroup;
+    private ToggleGroup novelProgressGroup;
 
     @FXML
     private Button add_button;
 
     @FXML
     private Button back_button;
-
-    @FXML
-    private ToggleButton chapterRadioToggle;
-
-    @FXML
-    private ToggleButton pageRadioToggle;
 
     @FXML
     private RadioButton chapterRadio;
@@ -48,18 +42,15 @@ public class addNovelController {
     private Button saveNovelBtn;
 
     public void onSaveNovelClick(ActionEvent event) throws IOException {
-
-        chapterRadio = new RadioButton ("Chapter");
-        pageRadio = new RadioButton ("Page");
-
-        pageProgressGroup = new ToggleGroup();
-        pageProgressGroup = new ToggleGroup();
-
         try {
             return;
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void initialize() {
+        chapterRadio.setSelected(true);
     }
 }
 
